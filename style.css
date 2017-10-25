@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+    font-family: Consolas, monospace;
+    color: white;
+    margin: 0;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*
+
+ The "loading" screen of the app.
+
+*/
+
+#main-icon {
+    width: 25%;
+    display: block;
+    vertical-align: middle;
+    margin: 25vh auto auto;
+}
+
+.disappearing {
+    animation-fill-mode: forwards;
+    animation-name: fadeout;
+    animation-duration: 0.5s;
+}
+
+#main-icon:hover {
+    cursor: pointer;
+}
+
+#start-button {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#start-button:hover {
+    cursor: pointer;
+}
+
+
+/*
+Main body.
+ */
+
+#main-body {
+    display: none;
+    opacity: 0;
+    font-size: 20px;
+    font-family: Consolas, monospace;
+}
+
+#main-body.shown {
+    display: block;
+    animation-fill-mode: forwards;
+    animation-name: fadein;
+    animation-duration: 0.5s;
+}
+
+#output-console {
+    overflow-y: auto;
+    font-size: 16px;
+    height: calc(100vh - 48px);
+    width: calc(100% - 20px);
+    color: #BE90D4;
+    padding: 10px;
+    background-color: black; /* test */
+}
+
+#input-console {
+    height: 16px;
+    width: calc(100% - 20px);
+    resize: none;
+    margin: 0;
+    border: 0;
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Consolas, monospace;
+}
+
+#output-console > p {
+    margin: 0;
+}
+
+.STDIN {
+    color: white;
+}
