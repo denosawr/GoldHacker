@@ -186,7 +186,11 @@ function security_elevate() {
                 addToConsole(OUT + "Wow. Well done. You did it! Hope you had as much fun playing as I did " +
                     "making this little game :) Credit to JC and AC who both gave a few suggestions, as well " +
                     "as the countless people who beta-played this game.");
-                addToConsole(OUT + "References:")
+                addToConsole(OUT + "References:\n" +
+                    "Gold Prospecting in WA n.d., Alluvial Gold Explained, accessed 26 October 2017, http://www.gold-prospecting-wa.com/alluvial-gold.html. \n" +
+                    "Minerals and Rocks Research Assignment - Gold 2017, Myself (o.c.), Perth, accessed 24 October 2017. \n" +
+                    "Protect Ecuador n.d., Open-pit mining: general overview, accessed 25 October 2017, http://protectecuador.org/portfolio/open-pit-mining-general-overview-2/. \n" +
+                    "Wikipedia n.d., List of active gold mines in Western Australia, accessed 24 October 2017, https://en.wikipedia.org/wiki/List_of_active_gold_mines_in_Western_Australia. ");
         }
     }
 }
