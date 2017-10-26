@@ -93,6 +93,14 @@ Main body.
     font-family: Consolas, monospace;
 }
 
+.stdout-img {
+    max-width: 40%;
+    max-height: 20vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
 #output-console > p {
     margin: 0;
 }
